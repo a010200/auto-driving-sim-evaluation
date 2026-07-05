@@ -1,0 +1,33 @@
+build/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# Compiled files
+*.o
+*.out
+*.exe
+
+# Python temporary files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated simulation data and figures
+data/*.csv
+result/*.png
+result/*.jpg
+
+# Keep empty project folders
+!data/.gitkeep
+!result/.gitkeep
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+*~
