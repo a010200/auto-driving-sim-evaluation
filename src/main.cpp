@@ -1,28 +1,29 @@
 #include <iostream>
-
 #include "Vehicle.h"
 
-int main() {
-    Vehicle ego_vehicle(0.0, 0.0);
+using namespace std;
 
-    const double dt = 0.1;
-    const double total_time = 5.0;
+int main(){
+    Vehicle egoVehicle(0.0,0.0);
 
-    std::cout << "time,position,velocity,acceleration\n";
+    const double dt=0.1;
+    const double totalTime=5.0;
 
-    for (double time = 0.0; time <= total_time; time = time + dt) {
-        if (time < 2.0) {
-            ego_vehicle.setAcceleration(1.0);
-        } else {
-            ego_vehicle.setAcceleration(0.0);
+    cout<<"time,position,velocity,acceleration"<<endl;
+
+    for(double time=0.0;time<=totalTime;time=time+dt){
+        if(time<2.0){
+            egoVehicle.setAcceleration(1.0);
+        }else{
+            egoVehicle.setAcceleration(0.0);
         }
 
-        ego_vehicle.update(dt);
+        egoVehicle.update(dt);
 
-        std::cout << time << ","
-                  << ego_vehicle.getPosition() << ","
-                  << ego_vehicle.getVelocity() << ","
-                  << ego_vehicle.getAcceleration() << "\n";
+        cout<<time<<","
+            <<egoVehicle.getPosition()<<","
+            <<egoVehicle.getVelocity()<<","
+            <<egoVehicle.getAcceleration()<<endl;
     }
 
     return 0;

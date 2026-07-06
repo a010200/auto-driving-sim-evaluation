@@ -1,4 +1,6 @@
 build/
+builder/
+bin/
 
 # CMake generated files
 CMakeCache.txt

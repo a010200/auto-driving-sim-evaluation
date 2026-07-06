@@ -1,9 +1,9 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
-class Vehicle {
+class Vehicle{
 public:
-    Vehicle(double position, double velocity);
+    Vehicle(double position,double velocity);
 
     void setAcceleration(double acceleration);
     void update(double dt);
