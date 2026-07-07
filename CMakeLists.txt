@@ -6,7 +6,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(SRC_LIST src/main.cpp src/Vehicle.cpp )
+set(SRC_LIST
+    src/main.cpp
+    src/Vehicle.cpp
+    src/Logger.cpp
+    src/LeadVehicle.cpp
+)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 #输出的文件放在根目录下的bin里
 add_executable(simulator
