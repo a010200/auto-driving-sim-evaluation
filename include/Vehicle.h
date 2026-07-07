@@ -13,9 +13,9 @@ public:
     double getAcceleration() const;
 
 private:
-    double position_;
-    double velocity_;
-    double acceleration_;
+    double m_position;
+    double m_velocity;
+    double m_acceleration;
 };
 
 #endif

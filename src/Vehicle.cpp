@@ -1,26 +1,28 @@
 #include "Vehicle.h"
 
+using namespace std;
+
 Vehicle::Vehicle(double position,double velocity)
-    : position_(position),velocity_(velocity),acceleration_(0.0){
+    :m_position(position),m_velocity(velocity),m_acceleration(0.0){
 }
 
 void Vehicle::setAcceleration(double acceleration){
-    acceleration_=acceleration;
+    m_acceleration=acceleration;
 }
 
 void Vehicle::update(double dt){
-    velocity_=velocity_+acceleration_*dt;
-    position_=position_+velocity_*dt;
+    m_velocity=m_velocity+m_acceleration*dt;
+    m_position=m_position+m_velocity*dt;
 }
 
 double Vehicle::getPosition() const{
-    return position_;
+    return m_position;
 }
 
 double Vehicle::getVelocity() const{
-    return velocity_;
+    return m_velocity;
 }
 
 double Vehicle::getAcceleration() const{
-    return acceleration_;
+    return m_acceleration;
 }
