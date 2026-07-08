@@ -18,8 +18,11 @@ public:
                    double leadPosition,
                    double leadVelocity,
                    double leadAcceleration,
-                   double distance);
-
+                   double distance,
+                   double throttle,
+                   double brake,
+                   double ttc);
+    void close();
 private:
     ofstream m_file;
 };

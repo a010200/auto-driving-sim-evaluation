@@ -19,7 +19,10 @@ void Logger::writeHeader(){
           <<"lead_position,"
           <<"lead_speed,"
           <<"lead_acceleration,"
-          <<"distance"<<endl;
+          <<"distance,"
+          <<"throttle,"
+          <<"brake,"
+          <<"ttc"<<endl;
 }
 
 void Logger::writeData(double time,
@@ -29,7 +32,10 @@ void Logger::writeData(double time,
                        double leadPosition,
                        double leadVelocity,
                        double leadAcceleration,
-                       double distance){
+                       double distance,
+                       double throttle,
+                       double brake,
+                       double ttc){
     m_file<<time<<","
           <<egoPosition<<","
           <<egoVelocity<<","
@@ -37,5 +43,11 @@ void Logger::writeData(double time,
           <<leadPosition<<","
           <<leadVelocity<<","
           <<leadAcceleration<<","
-          <<distance<<endl;
+          <<distance<<","
+          <<throttle<<","
+          <<brake<<","
+          <<ttc<<endl;
+}
+void Logger::close(){
+    m_file.close();
 }

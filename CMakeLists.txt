@@ -11,6 +11,7 @@ set(SRC_LIST
     src/Vehicle.cpp
     src/Logger.cpp
     src/LeadVehicle.cpp
+    src/Controller.cpp
 )
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 #输出的文件放在根目录下的bin里
