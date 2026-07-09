@@ -43,7 +43,7 @@ auto-driving-sim-evaluation/
 └── docs/
     ├── interview_notes.md
     └── images/
-        ├── speed_curve.png
+        ├── example_speed_curve.png
         ├── acceleration_curve.png
         └── distance_ttc_curve.png
 ```
@@ -131,7 +131,7 @@ result/distance_ttc_curve.png
 
 速度曲线：
 
-![speed curve](docs/images/speed_curve.png)
+![speed curve](docs/images/example_speed_curve.png)
 
 加速度曲线：
 
