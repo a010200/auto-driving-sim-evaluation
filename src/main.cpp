@@ -59,7 +59,9 @@ int main(){
             <<controller.getBrake()<<","
             <<ttc<<endl;
     }//向控制台打印输出数据注意和上面logger.writeData区分
-        logger.close();
+
+    logger.close();
+
     cout<<"log saved to data/log.csv"<<endl;
 
     return 0;
