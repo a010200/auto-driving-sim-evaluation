@@ -198,11 +198,6 @@ const double totalTime=6.0;
 - 自动检测 TTC 风险片段和车距风险片段
 - 自动检测急刹不舒适片段
 - 自动生成 `result_summary.csv`
-- 对比不同制动策略，例如 `fixed_brake`、`distance_threshold`、`ttc_trigger`
+- 对比不同制动策略
 
-## 简历描述示例
 
-```text
-自动驾驶跟车制动场景仿真与离线分析原型
-基于 C++17/CMake 实现简化车辆纵向运动仿真，构造前车制动场景，并输出包含速度、加速度、车距、TTC、制动状态等字段的 CSV 日志；使用 Python、pandas、matplotlib 对日志进行离线读取和曲线绘制，辅助观察跟车制动过程中的风险变化。
-```
